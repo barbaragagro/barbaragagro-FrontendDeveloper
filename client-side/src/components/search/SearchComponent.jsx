@@ -20,12 +20,11 @@ function SearchComponent() {
     setStatusFilter(StatusFilterRef.current.value);
     setLaunchFilter(LaunchFilterRef.current.value);
     setTypeFilter(TypeFilterRef.current.value);
-    console.log(LaunchFilterRef.current.value);
   };
   return (
     <section
       id="search"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 mt-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute bottom-3/4  -left-24 transform -translate-x-1/2 -translate-1/2"></div>
       <div>
@@ -47,7 +46,6 @@ function SearchComponent() {
               id="search"
               onChange={(e) => {
                 setSearchInput(e.target.value);
-                console.log(searchInput);
               }}
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-l-lg block w-full p-2.5"
               placeholder="Type in capsule serial number..."
@@ -70,13 +68,13 @@ function SearchComponent() {
               <select
                 ref={StatusFilterRef}
                 id="status"
-                className="cursor-pointer bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg focus:ring-amber-500  focus:border-amber-500 block w-full p-2.5"
+                className="cursor-pointer bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg focus:ring-primary-500  focus:border-primary-500 block w-full p-2.5"
               >
                 <option defaultValue value="">
                   No filter
                 </option>
                 <option value="active">active</option>
-                <option className=" hover:bg-amber-500" value="retired">
+                <option className=" hover:bg-primary-500" value="retired">
                   retired
                 </option>
                 <option value="destroyed">destroyed</option>
@@ -93,14 +91,14 @@ function SearchComponent() {
               <select
                 ref={LaunchFilterRef}
                 id="original_launch"
-                className="cursor-pointer bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg focus:ring-amber-500  focus:border-amber-500 block w-full p-2.5"
+                className="cursor-pointer bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg focus:ring-primary-500  focus:border-primary-500 block w-full p-2.5"
               >
                 <option defaultValue value={''}>
                   No filter
                 </option>
                 <option value={['2010', '2011', '2012']}>2010-2012</option>
                 <option
-                  className=" hover:bg-amber-500"
+                  className=" hover:bg-primary-500"
                   value={['2013', '2014', '2015']}
                 >
                   2013-2015
@@ -121,13 +119,13 @@ function SearchComponent() {
               <select
                 ref={TypeFilterRef}
                 id="type"
-                className="cursor-pointer bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg focus:ring-amber-500  focus:border-amber-500 block w-full p-2.5"
+                className="cursor-pointer bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg focus:ring-primary-500  focus:border-primary-500 block w-full p-2.5"
               >
                 <option defaultValue value="">
                   No filter
                 </option>
                 <option value="Dragon 1.0">Dragon 1.0</option>
-                <option className=" hover:bg-amber-500" value="Dragon 1.1">
+                <option className=" hover:bg-primary-500" value="Dragon 1.1">
                   Dragon 1.1
                 </option>
                 <option value="Dragon 2.0">Dragon 2.0</option>
