@@ -62,7 +62,7 @@ function DataGridComponent() {
         <h1>Loading...</h1>
       ) : (
         <>
-          <ul ref={ref} className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 md:gap-12 place-items-center">
+          <ul ref={ref} className="grid 2xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 w-full md:gap-12 ">
             {currentCapsules.map((capsule, index) => (
               <motion.li
                 key={capsule.capsule_serial}
@@ -75,9 +75,9 @@ function DataGridComponent() {
                   key={capsule.capsule_serial}
                   serial={capsule.capsule_serial}
                   status={capsule.status}
-                  imgUrl={capsule.image}
                   type={capsule.type}
                   date={capsule.original_launch}
+                  missionName={capsule.missions.map(mission=>mission.name)}
                 />
               </motion.li>
             ))}

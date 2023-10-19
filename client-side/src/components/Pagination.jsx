@@ -7,7 +7,7 @@ function Pagination({ capsulesPerPage, totalCapsules, paginate }) {
   }
 
   return (
-    <nav className='flex justify-center'>
+    <nav className='flex justify-center mt-7'>
       <ul className='flex m-2'>
         {pageNumbers.map((number) => (
           <li className=' mx-2 cursor-pointer hover:text-opacity-50 hover:scale-110 font-bold  text-xl px-2 text-primary-500' key={number}>
