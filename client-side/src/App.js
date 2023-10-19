@@ -1,8 +1,7 @@
-import './App.css';
 import BannerComponent from './components/BannerComponent';
 import Footer from './components/Footer';
-import SearchComponent from './components/SearchComponent';
 import Navbar from './components/navigation/Navbar';
+import SearchContainer from './components/search/SearchContainer';
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <BannerComponent />
-        <SearchComponent />
+        <SearchContainer />
       </div>
       <Footer />
     </main>
