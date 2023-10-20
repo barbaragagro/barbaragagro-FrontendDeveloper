@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/barbaragagro-FrontendDeveloper/static/css/main.f49b8fc9.css",
-    "main.js": "/barbaragagro-FrontendDeveloper/static/js/main.7100741d.js",
+    "main.js": "/barbaragagro-FrontendDeveloper/static/js/main.3bb591c4.js",
     "static/js/787.9a61249f.chunk.js": "/barbaragagro-FrontendDeveloper/static/js/787.9a61249f.chunk.js",
+    "static/media/capsule-image.png": "/barbaragagro-FrontendDeveloper/static/media/capsule-image.45430418a65e04c6db12.png",
     "index.html": "/barbaragagro-FrontendDeveloper/index.html",
     "main.f49b8fc9.css.map": "/barbaragagro-FrontendDeveloper/static/css/main.f49b8fc9.css.map",
-    "main.7100741d.js.map": "/barbaragagro-FrontendDeveloper/static/js/main.7100741d.js.map",
+    "main.3bb591c4.js.map": "/barbaragagro-FrontendDeveloper/static/js/main.3bb591c4.js.map",
     "787.9a61249f.chunk.js.map": "/barbaragagro-FrontendDeveloper/static/js/787.9a61249f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f49b8fc9.css",
-    "static/js/main.7100741d.js"
+    "static/js/main.3bb591c4.js"
   ]
 }
