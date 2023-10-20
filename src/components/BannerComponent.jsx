@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import capsuleImage from '../images/capsule-image.png'
 
 function BannerComponent() {
   return (
@@ -49,7 +50,7 @@ function BannerComponent() {
         <div className="col-span-4 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <img
-              src="/images/capsule-image.png"
+              src={capsuleImage}
               alt="capsuleimage"
               className=" w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] "
               width={300}
