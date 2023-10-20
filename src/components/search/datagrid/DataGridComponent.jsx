@@ -17,7 +17,7 @@ function DataGridComponent() {
     useContext(SearchContext);
 
   const cardVariants = {
-    initial: { y: 20, opacity: 0 },
+    initial: { y: 20, opacity: 1 },
     animate: { y: 0, opacity: 1 },
   };
 
