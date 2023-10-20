@@ -24,9 +24,7 @@ function DataGridComponent() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await axios('https://api.spacexdata.com/v3/capsules', {
-
-      });
+      const response = await axios('https://api.spacexdata.com/v3/capsules');
       const data = response.data;
       setCapsules(data);
       setLoading(false);
@@ -64,10 +62,7 @@ function DataGridComponent() {
         <h1>Loading...</h1>
       ) : (
         <>
-          <ul
-            ref={ref}
-            className="grid 2xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 w-full md:gap-12 "
-          >
+          <ul ref={ref} className="grid 2xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 w-full md:gap-12 ">
             {currentCapsules.map((capsule, index) => (
               <motion.li
                 key={capsule.capsule_serial}
@@ -82,7 +77,7 @@ function DataGridComponent() {
                   status={capsule.status}
                   type={capsule.type}
                   date={capsule.original_launch}
-                  missionName={capsule.missions.map((mission) => mission.name)}
+                  missionName={capsule.missions.map(mission=>mission.name)}
                 />
               </motion.li>
             ))}
