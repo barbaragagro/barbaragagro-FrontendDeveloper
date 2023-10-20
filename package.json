@@ -1,7 +1,7 @@
 {
   "name": "barbaragagro-frontend-developer",
   "version": "0.1.0",
-  "homepage": "https://barbaragagro.github.io/FrontendDeveloper",
+  "homepage": "https://barbaragagro.github.io/barbaragagro-FrontendDeveloper",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
